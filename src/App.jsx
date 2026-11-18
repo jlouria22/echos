@@ -5,7 +5,6 @@ export default function App() {
   const [episodes] = useState(episodeList);
   const [selectedEpisode, setSelectedEpisode] = useState();
 
-  /** Detailed information about the selected episode */
   function EpisodeDetails() {
     if (!selectedEpisode) {
       return (
@@ -25,7 +24,6 @@ export default function App() {
     );
   }
 
-  /** List of episodes that a user can select from */
   function EpisodeList() {
     return (
       <section className="episodes">
